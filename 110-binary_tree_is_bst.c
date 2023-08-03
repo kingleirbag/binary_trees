@@ -3,7 +3,7 @@
  * find_node - a function that finds a node in a tree
  * @root: root of the tre to evaluate
  * @node: node to find
- * Return: 1 if exits else 0  
+ * Return: 1 if exits else 0
  */
 int find_node(binary_tree_t *root, binary_tree_t *node)
 {
