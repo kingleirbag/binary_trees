@@ -27,6 +27,7 @@ bst_t *inorder_successor(bst_t *root)
 bst_t *bst_delete(bst_t *root, bst_t *node)
 {
 	bst_t *parent = node->parent, *successor = NULL;
+
 	if (node->left == NULL)
 	{
 		if (parent != NULL && parent->left == node)
@@ -80,7 +81,7 @@ bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value)
 
 /**
  * bst_remove - a function that removes a node from a Binary Search Tree
- * @root: is a pointer to the root node of the tree where you will remove a node
+ * @root: pointer to the root node of the tree where you will remove a node
  * @value: is the value to remove in the tree
  * Return: a pointer to the new root node of the tree after removing the
  * desired value

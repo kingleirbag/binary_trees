@@ -35,5 +35,6 @@ bst_t *bst_insert(bst_t **tree, int value)
 		}
 		return (bst_insert(&(b_tree->right), value));
 	}
+
 	return (NULL);
 }
