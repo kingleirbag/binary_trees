@@ -23,14 +23,14 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 				     const binary_tree_t *second)
 {
-	size_t height_f = 0, height_s = 0;
+	size_t first_hgt = 0, secon_hgt = 0;
 	const binary_tree_t *aux = NULL;
 
-	height_f = binary_tree_depth(first);
-	height_s = binary_tree_depth(second);
-	if (height_f && height_s)
+	first_hgt = binary_tree_depth(first);
+	secon_hgt = binary_tree_depth(second);
+	if (first_hgt && secon_hgt)
 	{
-		if (height_f > height_s)
+		if (first_hgt > secon_hgt)
 		{
 			aux = first;
 			first = second;

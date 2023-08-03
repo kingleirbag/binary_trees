@@ -23,7 +23,7 @@ int count_h_nodes(binary_tree_t *root)
  */
 int *heap_to_sorted_array(heap_t *heap, size_t *size)
 {
-	int i, nodes, *arr = NULL;
+	int counter, nodes, *arr = NULL;
 
 	*size = 0;
 	if (!heap)
@@ -35,8 +35,8 @@ int *heap_to_sorted_array(heap_t *heap, size_t *size)
 		return (NULL);
 
 	*size = nodes;
-	for (i = 0; i < nodes; i++)
-		arr[i] = heap_extract(&heap);
+	for (counter = 0; counter < nodes; counter++)
+		arr[counter] = heap_extract(&heap);
 
 	return (arr);
 }

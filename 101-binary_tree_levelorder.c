@@ -52,15 +52,15 @@ void print_at_level(const binary_tree_t *tree, void (*func)(int), int level)
  */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
-	size_t h = 0, i = 1;
+	size_t height = 0, index = 1;
 
 	if (tree && func)
 	{
-		h = binary_tree_height(tree);
-		while (i <= h + 1)
+		height = binary_tree_height(tree);
+		while (index <= height + 1)
 		{
-			print_at_level(tree, func, i);
-			i++;
+			print_at_level(tree, func, index);
+			index++;
 		}
 	}
 }
